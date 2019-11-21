@@ -124,6 +124,7 @@ var selectedAID = -1;
 //0 is the answer
 
 function setupSelectableAnswers() {
+  selectedAID = -1;
     $("#chooseAnswerButton").css("background-color", "white");
     $("#chooseAnswerButton").text("Select Answer");
 
@@ -318,6 +319,7 @@ function displayVotingForLie(cb) {
 var selectedLID = -1;
 
 function setupSelectableLies() {
+  selectedLID = -1;
   $("#chooseLieButton").css("background-color", "white");
   $("#chooseLieButton").text("Select Best Lie");
 
