@@ -1,5 +1,6 @@
 
 
+const NOT_PLAYING = -1;
 
 const CREATING_LIE = 0;
 const CHOOSING_ANSWER = 1;
@@ -7,7 +8,7 @@ const ANSWER_RESULTS = 2;
 const CHOOSING_BEST_LIE = 3;
 const BEST_LIE_RESULTS = 4;
 
-var gamestate = -1;
+var gamestate = NOT_PLAYING;
 
 var isLeaving = false;
 
@@ -142,4 +143,3 @@ socket.on('player leave', function(gamestart, id) {
         }
     }
 });
-

@@ -240,6 +240,7 @@ function createGame() {
 }
 
 function displayWaitingRoom(){
+    gamestate = NOT_PLAYING;
     document.getElementById("playing").style.display = "none";
 
     $("#startButton").unbind().click(startGame);
