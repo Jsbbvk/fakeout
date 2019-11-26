@@ -12,6 +12,9 @@ var gamestate = NOT_PLAYING;
 
 var isLeaving = false;
 
+window.onbeforeunload = function() {
+  if (gamestate != NOT_PLAYING) return "Confirm?";
+}
 
 window.onpagehide = function() {
     if (!isLeaving) socket.emit('delete player', roomID, nameID);
